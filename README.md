@@ -189,7 +189,7 @@ A.X 3.1은 동급 성능의 모델들보다 5~6배 낮은 연산량으로 학습
       <th></th>
       <th>A.X 3.1</th>
       <th>EXAONE-3.5-32B</th>
-      <th>Kanana-Flag-1.5-32.5B</th>
+      <th>Kanana-Flag-32.5B</th>
       <th>Gemma-3-27B</th>
       <th>Qwen2.5-32B</th>
     </tr>
