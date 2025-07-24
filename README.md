@@ -58,6 +58,8 @@ A.X 3.1은 동급 성능의 모델들보다 5~6배 낮은 연산량으로 학습
 
 ## 벤치마크 측정 결과
 
+### A.X 3.1 Light
+
 - A.X 3.1 Light는 동급 모델들 대비 MATH(70.14), HumanEval+ (73.78), MBPP+ (61.64) 등 코딩과 논리적 추론이 필요한 벤치마크에서 강세를 보입니다.
 - 특히 KMMLU (61.7), KoBALT (27.43), Ko-IFEval (70.04) 등 한국어 평가 지표에서 타사 모델 대비 우세하여 균형 잡힌 한국어 처리 능력을 갖췄습니다.
 
@@ -173,6 +175,142 @@ A.X 3.1은 동급 성능의 모델들보다 5~6배 낮은 연산량으로 학습
       <td>64.29</td>
       <td>68.50</td>
       <td>62.17</td>
+    </tr>
+  </tbody>
+</table>
+
+### A.X 3.1
+
+<table>
+  <caption style="text-align:left; caption-side:bottom">* self-reported score</caption>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>A.X 3.1</th>
+      <th>EXAONE-3.5-32B</th>
+      <th>Kanana-Flag-32.5B</th>
+      <th>Gemma-3-27B</th>
+      <th>Qwen2.5-32B</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">Knowledge</td>
+      <td>KMMLU</td>
+      <td>69.73</td>
+      <td>57.17</td>
+      <td>64.19*</td>
+      <td>59.45</td>
+      <td>61.93</td>
+    </tr>
+    <tr>
+      <td>KMMLU-pro</td>
+      <td>54.89</td>
+      <td>45.39</td>
+      <td>-</td>
+      <td>50.43</td>
+      <td>52.34</td>
+    </tr>
+    <tr>
+      <td>KMMLU-redux</td>
+      <td>62.66</td>
+      <td>48.32</td>
+      <td>-</td>
+      <td>54.85</td>
+      <td>52.15</td>
+    </tr>
+    <tr>
+      <td>Click (chat CoT)</td>
+      <td>77.09</td>
+      <td>69.42</td>
+      <td>-</td>
+      <td>71.03</td>
+      <td>68.17</td>
+    </tr>
+    <tr>
+      <td>MMLU</td>
+      <td>75.20</td>
+      <td>77.1</td>
+      <td>81.08*</td>
+      <td>82.35</td>
+      <td>83.4</td>
+    </tr>
+    <tr>
+      <td rowspan="2">General</td>
+      <td>Ko-MT-bench</td>
+      <td>83.06</td>
+      <td>80.19</td>
+      <td>80.58*</td>
+      <td>85.5</td>
+      <td>72.88</td>
+    </tr>
+    <tr>
+      <td>MT-bench</td>
+      <td>84.19</td>
+      <td>85.09</td>
+      <td>83.56*</td>
+      <td>84.38</td>
+      <td>87.31</td>
+    </tr>
+    <tr>
+      <td rowspan="2">IF</td>
+      <td>Ko-IFEval</td>
+      <td>75.29</td>
+      <td>68.67</td>
+      <td>-</td>
+      <td>74.4</td>
+      <td>73.24</td>
+    </tr>
+    <tr>
+      <td>IFEval</td>
+      <td>87.11</td>
+      <td>82.67</td>
+      <td>85.6*</td>
+      <td>82.45</td>
+      <td>82.27</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Math</td>
+      <td>HRM8K</td>
+      <td>45.53</td>
+      <td>36.3</td>
+      <td>-</td>
+      <td>48</td>
+      <td>41.29</td>
+    </tr>
+    <tr>
+      <td>MATH</td>
+      <td>75.40</td>
+      <td>61.64</td>
+      <td>57.82*</td>
+      <td>80.72</td>
+      <td>73.26</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Code</td>
+      <td>HumanEval+</td>
+      <td>75.00</td>
+      <td>77.44</td>
+      <td>77.44*</td>
+      <td>78.66</td>
+      <td>82.32</td>
+    </tr>
+    <tr>
+      <td>MBPP+</td>
+      <td>70.90</td>
+      <td>65.87</td>
+      <td>69.84*</td>
+      <td>74.07</td>
+      <td>73.81</td>
+    </tr>
+    <tr>
+      <td>LiveCodeBench</td>
+      <td>23.34</td>
+      <td>17.2</td>
+      <td>-</td>
+      <td>30.55</td>
+      <td>26.9</td>
     </tr>
   </tbody>
 </table>
